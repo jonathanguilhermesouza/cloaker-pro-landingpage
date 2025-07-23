@@ -1186,7 +1186,8 @@ button {
     }
     
     .hero-title {
-        font-size: var(--font-size-3xl);
+        font-size: var(--font-size-2xl);
+        line-height: 1.2;
     }
     
     .hero-cta {
