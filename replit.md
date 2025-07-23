@@ -87,22 +87,37 @@ Preferred communication style: Simple, everyday language.
 - **Domain Setup**: Custom domain configuration for branding
 - **SSL Certificate**: HTTPS required for professional appearance
 
-### Deployment Entry Points (Created 2025-07-23)
+### Deployment Entry Points (Updated 2025-07-23)
 Multiple entry points created to ensure compatibility with different deployment systems:
-- **main.py**: Primary Python HTTP server with custom request handling
+- **main.py**: Primary Python HTTP server with enhanced error handling and logging
 - **server.py**: Minimal HTTP server for simple deployments
 - **app.py**: Alternative entry point that imports main.py
 - **start.py**: Universal start script with error handling
+- **index.py**: Additional fallback entry point
 - **wsgi.py**: WSGI application for deployment systems requiring WSGI
 - **run.sh**: Bash script alternative using Python's built-in server
+- **run**: Simple bash executable for deployment platforms
 - **Procfile**: Process definition for Heroku-style deployments
+- **app.json**: Heroku app configuration
+- **runtime.txt**: Python version specification
 
-### Deployment Configuration
+### Deployment Configuration (Updated 2025-07-23)
 - **Port Binding**: Uses PORT environment variable or defaults to 5000
 - **Host Binding**: Configured for 0.0.0.0 to accept external connections
 - **Root Path Handling**: All entry points serve index.html for '/' requests
 - **Static File Serving**: Proper MIME types and caching headers
-- **Error Handling**: Graceful error responses and logging
+- **Error Handling**: Enhanced error responses with detailed logging
+- **Health Check**: HTTP server responds to GET / with 200 status
+- **Platform Support**: Heroku, Google Cloud Run, AWS, Vercel, and others
+- **Python Version**: Specified as python-3.11 in runtime.txt
+
+### Deployment Commands
+Available entry points for different platforms:
+- `python main.py` - Primary command (recommended)
+- `python server.py` - Minimal alternative
+- `python app.py` - Import-based entry
+- `./run.sh` - Bash script version
+- `./run` - Simple executable script
 
 ### Performance Considerations
 - **Asset Optimization**: Minified CSS and JavaScript for production
