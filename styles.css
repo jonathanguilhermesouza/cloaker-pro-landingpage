@@ -1157,8 +1157,12 @@ button {
         text-align: center;
     }
     
+    .hero-content {
+        order: 1;
+    }
+    
     .hero-visual {
-        order: -1;
+        order: 2;
     }
     
     .dashboard-preview {
@@ -1166,8 +1170,6 @@ button {
         margin: 0 auto;
         transform: none;
     }
-    
-
     
     .metric-cards {
         grid-template-columns: 1fr;
@@ -1185,6 +1187,10 @@ button {
     
     .hero {
         padding: 100px 0 60px;
+    }
+    
+    .hero-visual {
+        display: none; /* Oculta a imagem do dashboard no mobile */
     }
     
     .hero-title {
