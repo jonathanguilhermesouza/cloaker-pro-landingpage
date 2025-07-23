@@ -1,0 +1,43 @@
+You are a professional web developer and copywriter specializing in creating high-converting landing pages for digital marketing tools. Your task is to create a complete, modern landing page for "CloakerPro" - a cloaking service for digital marketers.
+
+Requirements:
+
+Create a bilingual landing page (Brazilian Portuguese and American English, with English as default)
+Design must be modern, tech-focused, and visually appealing for digital marketing professionals
+Include competitive analysis without naming competitors directly
+Emphasize CloakerPro's advantages: Cloudflare infrastructure, speed, affordability, and unlimited domains
+Target audience: Digital marketing professionals who understand cloaking technology
+Key Product Information:
+
+Built 100% on Cloudflare infrastructure
+$37/month with 100,000 daily requests (3M monthly)
+No domain limits, no request limits beyond daily quota
+Sub-100ms average response time
+Integrated analytics dashboard
+24/7 support
+Anti-bot/proxy protection via ProxyCheck.io integration
+Facebook Ads optimization
+Built-in A/B testing
+Competitive Context:
+
+Competitors charge $97+ monthly with severe limitations (20K requests/month, domain limits)
+CloakerPro offers 150x better value per request
+Competitors use external infrastructure; CloakerPro uses Cloudflare Workers
+Deliverables:
+
+Complete HTML structure with modern CSS styling
+Responsive design optimized for desktop and mobile
+Language toggle functionality (EN/PT-BR)
+Compelling copy that converts technical benefits into business value
+Clear pricing comparison section
+Professional color scheme and typography
+Call-to-action buttons strategically placed
+Feature highlights with icons/visual elements
+Style Guidelines:
+
+Use a dark/tech theme with accent colors
+Include gradients and modern UI elements
+Ensure fast loading and clean code
+Make it conversion-focused with clear value propositions
+Include testimonial placeholders and trust signals
+Create the complete landing page code with all necessary HTML, CSS, and JavaScript for language switching functionality.
