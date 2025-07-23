@@ -13,5 +13,5 @@ if [ ! -f "index.html" ]; then
     exit 1
 fi
 
-# Start Python HTTP server
-exec python3 -m http.server $PORT --bind 0.0.0.0
+# Start enhanced Python server
+exec python3 start_server.py

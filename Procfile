@@ -1,2 +1,1 @@
-web: python main.py
-release: echo "Deployment successful"
+web: python start_server.py

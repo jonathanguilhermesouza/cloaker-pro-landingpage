@@ -1,5 +1,11 @@
 # CloakerPro Landing Page
 
+## Status Atual (2025-07-23 20:23)
+✅ Servidor funcionando corretamente no desenvolvimento
+✅ Erros de JavaScript corrigidos
+✅ Health check passando
+⚠️ Problema com deployment no Replit (botão Redeploy não responde)
+
 ## Overview
 
 CloakerPro is a professional marketing landing page for a traffic cloaking service built on Cloudflare infrastructure. This is a static website designed to convert digital marketing professionals into customers through compelling copy, competitive positioning, and a modern tech-focused design.
@@ -111,13 +117,28 @@ Multiple entry points created to ensure compatibility with different deployment 
 - **Platform Support**: Heroku, Google Cloud Run, AWS, Vercel, and others
 - **Python Version**: Specified as python-3.11 in runtime.txt
 
-### Deployment Commands
+### Deployment Commands (Updated 2025-07-23)
 Available entry points for different platforms:
-- `python main.py` - Primary command (recommended)
+- `python start_server.py` - Enhanced production server (recommended)
+- `python main.py` - Basic server with error handling
 - `python server.py` - Minimal alternative
 - `python app.py` - Import-based entry
+- `./deploy.sh` - Complete deployment script
 - `./run.sh` - Bash script version
 - `./run` - Simple executable script
+- `python health.py` - Health check utility
+
+### Troubleshooting Deployment Issues
+1. **Replit Deployment**: Se o botão "Redeploy" não responder:
+   - Verificar se todos os arquivos estão presentes
+   - Tentar usar diferentes entry points
+   - Verificar logs de deployment
+   - O servidor funciona localmente em desenvolvimento
+
+2. **Verificação de Funcionamento**:
+   - Health check: `python health.py`
+   - Teste local: `curl http://localhost:5000/`
+   - Arquivos críticos: index.html, styles.css, script.js
 
 ### Performance Considerations
 - **Asset Optimization**: Minified CSS and JavaScript for production

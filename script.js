@@ -22,70 +22,88 @@
 
     // Cache frequently used DOM elements
     function cacheDOMElements() {
-        elements = {
-            languageButtons: document.querySelectorAll('.lang-btn'),
-            mobileMenuToggle: document.querySelector('.mobile-menu-toggle'),
-            navMenu: document.querySelector('.nav-menu'),
-            navbar: document.querySelector('.navbar'),
-            translatableElements: document.querySelectorAll('[data-en]'),
-            ctaButtons: document.querySelectorAll('.cta-btn'),
-            featureCards: document.querySelectorAll('.feature-card'),
-            testimonialCards: document.querySelectorAll('.testimonial-card'),
-            faqItems: document.querySelectorAll('.faq-item'),
-            dashboardPreview: document.querySelector('.dashboard-preview')
-        };
+        try {
+            elements = {
+                languageButtons: document.querySelectorAll('.lang-btn') || [],
+                mobileMenuToggle: document.querySelector('.mobile-menu-toggle'),
+                navMenu: document.querySelector('.nav-menu'),
+                navbar: document.querySelector('.navbar'),
+                translatableElements: document.querySelectorAll('[data-en]') || [],
+                ctaButtons: document.querySelectorAll('.cta-btn') || [],
+                featureCards: document.querySelectorAll('.feature-card') || [],
+                testimonialCards: document.querySelectorAll('.testimonial-card') || [],
+                faqItems: document.querySelectorAll('.faq-item') || [],
+                dashboardPreview: document.querySelector('.dashboard-preview')
+            };
+        } catch (error) {
+            console.warn('Error caching DOM elements:', error);
+            elements = {};
+        }
     }
 
     // Set up all event listeners
     function setupEventListeners() {
-        // Language switching
-        elements.languageButtons.forEach(button => {
-            button.addEventListener('click', handleLanguageSwitch);
-        });
-
-        // Mobile menu toggle
-        if (elements.mobileMenuToggle) {
-            elements.mobileMenuToggle.addEventListener('click', toggleMobileMenu);
-        }
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(link => {
-            link.addEventListener('click', handleSmoothScroll);
-        });
-
-        // Navbar scroll behavior
-        window.addEventListener('scroll', handleNavbarScroll);
-
-        // Intersection Observer for animations
-        if ('IntersectionObserver' in window) {
-            setupIntersectionObserver();
-        }
-
-        // FAQ accordion functionality
-        elements.faqItems.forEach(item => {
-            const question = item.querySelector('.faq-question');
-            if (question) {
-                question.addEventListener('click', () => toggleFAQ(item));
+        try {
+            // Language switching
+            if (elements.languageButtons && elements.languageButtons.length > 0) {
+                elements.languageButtons.forEach(button => {
+                    button.addEventListener('click', handleLanguageSwitch);
+                });
             }
-        });
 
-        // CTA button hover effects
-        elements.ctaButtons.forEach(button => {
-            button.addEventListener('mouseenter', handleCTAHover);
-            button.addEventListener('mouseleave', handleCTALeave);
-        });
+            // Mobile menu toggle
+            if (elements.mobileMenuToggle) {
+                elements.mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+            }
 
-        // Dashboard preview interaction
-        if (elements.dashboardPreview) {
-            elements.dashboardPreview.addEventListener('mouseenter', handleDashboardHover);
-            elements.dashboardPreview.addEventListener('mouseleave', handleDashboardLeave);
+            // Smooth scrolling for navigation links
+            const navLinks = document.querySelectorAll('a[href^="#"]');
+            if (navLinks.length > 0) {
+                navLinks.forEach(link => {
+                    link.addEventListener('click', handleSmoothScroll);
+                });
+            }
+
+            // Navbar scroll behavior
+            window.addEventListener('scroll', handleNavbarScroll);
+
+            // Intersection Observer for animations
+            if ('IntersectionObserver' in window) {
+                setupIntersectionObserver();
+            }
+
+            // FAQ accordion functionality
+            if (elements.faqItems && elements.faqItems.length > 0) {
+                elements.faqItems.forEach(item => {
+                    const question = item.querySelector('.faq-question');
+                    if (question) {
+                        question.addEventListener('click', () => toggleFAQ(item));
+                    }
+                });
+            }
+
+            // CTA button hover effects
+            if (elements.ctaButtons && elements.ctaButtons.length > 0) {
+                elements.ctaButtons.forEach(button => {
+                    button.addEventListener('mouseenter', handleCTAHover);
+                    button.addEventListener('mouseleave', handleCTALeave);
+                });
+            }
+
+            // Dashboard preview interaction
+            if (elements.dashboardPreview) {
+                elements.dashboardPreview.addEventListener('mouseenter', handleDashboardHover);
+                elements.dashboardPreview.addEventListener('mouseleave', handleDashboardLeave);
+            }
+
+            // Keyboard navigation
+            document.addEventListener('keydown', handleKeyboardNavigation);
+
+            // Window resize handling
+            window.addEventListener('resize', debounce(handleWindowResize, 250));
+        } catch (error) {
+            console.warn('Error setting up event listeners:', error);
         }
-
-        // Keyboard navigation
-        document.addEventListener('keydown', handleKeyboardNavigation);
-
-        // Window resize handling
-        window.addEventListener('resize', debounce(handleWindowResize, 250));
     }
 
     // Handle language switching
