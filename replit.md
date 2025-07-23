@@ -87,6 +87,23 @@ Preferred communication style: Simple, everyday language.
 - **Domain Setup**: Custom domain configuration for branding
 - **SSL Certificate**: HTTPS required for professional appearance
 
+### Deployment Entry Points (Created 2025-07-23)
+Multiple entry points created to ensure compatibility with different deployment systems:
+- **main.py**: Primary Python HTTP server with custom request handling
+- **server.py**: Minimal HTTP server for simple deployments
+- **app.py**: Alternative entry point that imports main.py
+- **start.py**: Universal start script with error handling
+- **wsgi.py**: WSGI application for deployment systems requiring WSGI
+- **run.sh**: Bash script alternative using Python's built-in server
+- **Procfile**: Process definition for Heroku-style deployments
+
+### Deployment Configuration
+- **Port Binding**: Uses PORT environment variable or defaults to 5000
+- **Host Binding**: Configured for 0.0.0.0 to accept external connections
+- **Root Path Handling**: All entry points serve index.html for '/' requests
+- **Static File Serving**: Proper MIME types and caching headers
+- **Error Handling**: Graceful error responses and logging
+
 ### Performance Considerations
 - **Asset Optimization**: Minified CSS and JavaScript for production
 - **Image Optimization**: Placeholder for future image assets
