@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloakerPro - Advanced Traffic Manager for Digital Marketers</title>
+    <meta name="description" content="Professional cloaking service built on Cloudflare infrastructure. 100,000 daily requests for $37/month. Unlimited domains, sub-100ms response time.">
+    <meta name="keywords" content="cloaking service, traffic cloaking, digital marketing, cloudflare, affiliate marketing">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cloakerpro.com/">
+    <meta property="og:title" content="CloakerPro - Advanced Traffic Manager">
+    <meta property="og:description" content="Professional cloaking service built on Cloudflare infrastructure with unlimited domains and 24/7 support.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cloakerpro.com/">
+    <meta property="twitter:title" content="CloakerPro - Advanced Traffic Manager">
+    <meta property="twitter:description" content="Professional cloaking service built on Cloudflare infrastructure with unlimited domains and 24/7 support.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+    
+    <!-- External Libraries -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-shield-alt brand-icon"></i>
+                <span class="brand-text">CloakerPro</span>
+                <span class="brand-tagline" data-en="Advanced Traffic Manager" data-pt="Gerenciador Avançado de Tráfego">Advanced Traffic Manager</span>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#features" class="nav-link" data-en="Features" data-pt="Recursos">Features</a>
+                <a href="#pricing" class="nav-link" data-en="Pricing" data-pt="Preços">Pricing</a>
+                <a href="#testimonials" class="nav-link" data-en="Reviews" data-pt="Avaliações">Reviews</a>
+                
+                <div class="language-toggle">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="pt">PT</button>
+                </div>
+                
+                <a href="#pricing" class="cta-btn nav-cta" data-en="Start Free Trial" data-pt="Teste Grátis">Start Free Trial</a>
+            </div>
+            
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fab fa-cloudflare"></i>
+                    <span data-en="Built on Cloudflare Infrastructure" data-pt="Construído na Infraestrutura Cloudflare">Built on Cloudflare Infrastructure</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span data-en="Professional Traffic Cloaking" data-pt="Cloaking Profissional de Tráfego">Professional Traffic Cloaking</span>
+                    <span class="gradient-text" data-en="150x Better Value" data-pt="150x Melhor Custo-Benefício">150x Better Value</span>
+                </h1>
+                
+                <p class="hero-subtitle" data-en="The only cloaking service you need. Built entirely on Cloudflare Workers with unlimited domains, 100,000 daily requests, and sub-100ms response times for just $37/month." data-pt="O único serviço de cloaking que você precisa. Construído inteiramente em Cloudflare Workers com domínios ilimitados, 100.000 requisições diárias e tempos de resposta abaixo de 100ms por apenas $37/mês.">
+                    The only cloaking service you need. Built entirely on Cloudflare Workers with unlimited domains, 100,000 daily requests, and sub-100ms response times for just $37/month.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">100K</div>
+                        <div class="stat-label" data-en="Daily Requests" data-pt="Requisições Diárias">Daily Requests</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">&lt;100ms</div>
+                        <div class="stat-label" data-en="Response Time" data-pt="Tempo de Resposta">Response Time</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label" data-en="Domains" data-pt="Domínios">Domains</div>
+                    </div>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="#pricing" class="cta-btn primary-cta">
+                        <span data-en="Start Your Free Trial" data-pt="Inicie Seu Teste Grátis">Start Your Free Trial</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#demo" class="cta-btn secondary-cta">
+                        <i class="fas fa-play"></i>
+                        <span data-en="Watch Demo" data-pt="Ver Demo">Watch Demo</span>
+                    </a>
+                </div>
+                
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <i class="fas fa-shield-check"></i>
+                        <span data-en="SOC 2 Compliant" data-pt="Compatível SOC 2">SOC 2 Compliant</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-clock"></i>
+                        <span data-en="99.9% Uptime" data-pt="99.9% Disponibilidade">99.9% Uptime</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-headset"></i>
+                        <span data-en="24/7 Support" data-pt="Suporte 24/7">24/7 Support</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="dashboard-preview">
+                    <div class="dashboard-header">
+                        <div class="dashboard-nav">
+                            <div class="nav-item active">
+                                <i class="fas fa-chart-line"></i>
+                                <span data-en="Dashboard" data-pt="Painel">Dashboard</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-content">
+                        <div class="metric-cards">
+                            <div class="metric-card">
+                                <div class="metric-icon purple">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <div class="metric-info">
+                                    <div class="metric-label" data-en="Total Requests" data-pt="Total de Requisições">Total Requests</div>
+                                    <div class="metric-value">74,832</div>
+                                </div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-icon green">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="metric-info">
+                                    <div class="metric-label" data-en="Safe Page" data-pt="Página Segura">Safe Page</div>
+                                    <div class="metric-value">42,109</div>
+                                </div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-icon blue">
+                                    <i class="fas fa-mouse-pointer"></i>
+                                </div>
+                                <div class="metric-info">
+                                    <div class="metric-label" data-en="Offer Page" data-pt="Página de Oferta">Offer Page</div>
+                                    <div class="metric-value">32,723</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="chart-container">
+                            <div class="chart-header">
+                                <h3 data-en="Traffic Distribution Analytics" data-pt="Análise de Distribuição de Tráfego">Traffic Distribution Analytics</h3>
+                                <div class="chart-period" data-en="Last 24h" data-pt="Últimas 24h">Last 24h</div>
+                            </div>
+                            <div class="chart-area">
+                                <svg class="traffic-chart" viewBox="0 0 400 200">
+                                    <!-- Chart background -->
+                                    <defs>
+                                        <linearGradient id="safeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.3" />
+                                            <stop offset="100%" style="stop-color:#10b981;stop-opacity:0" />
+                                        </linearGradient>
+                                        <linearGradient id="offerGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.3" />
+                                            <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0" />
+                                        </linearGradient>
+                                    </defs>
+                                    
+                                    <!-- Safe page area -->
+                                    <path d="M0,200 L0,120 Q100,110 200,115 T400,120 L400,200 Z" fill="url(#safeGradient)" />
+                                    <path d="M0,120 Q100,110 200,115 T400,120" stroke="#10b981" stroke-width="2" fill="none" />
+                                    
+                                    <!-- Offer page area -->
+                                    <path d="M0,200 L0,160 Q100,150 200,155 T400,160 L400,200 Z" fill="url(#offerGradient)" />
+                                    <path d="M0,160 Q100,150 200,155 T400,160" stroke="#3b82f6" stroke-width="2" fill="none" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Why Choose CloakerPro?" data-pt="Por Que Escolher o CloakerPro?">Why Choose CloakerPro?</h2>
+                <p class="section-subtitle" data-en="Built from the ground up on Cloudflare's global infrastructure for unmatched performance, reliability, and value." data-pt="Construído do zero na infraestrutura global da Cloudflare para desempenho, confiabilidade e valor incomparáveis.">
+                    Built from the ground up on Cloudflare's global infrastructure for unmatched performance, reliability, and value.
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fab fa-cloudflare"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 data-en="100% Cloudflare Infrastructure" data-pt="100% Infraestrutura Cloudflare">100% Cloudflare Infrastructure</h3>
+                        <p data-en="Built entirely on Cloudflare Workers, not third-party servers. This means lightning-fast global performance and 99.9% uptime guaranteed." data-pt="Construído inteiramente em Cloudflare Workers, não em servidores de terceiros. Isso significa desempenho global ultrarrápido e 99.9% de disponibilidade garantida.">
+                            Built entirely on Cloudflare Workers, not third-party servers. This means lightning-fast global performance and 99.9% uptime guaranteed.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 data-en="Unlimited Domains" data-pt="Domínios Ilimitados">Unlimited Domains</h3>
+                        <p data-en="No domain limits whatsoever. Scale your campaigns across as many domains as you need without additional fees or restrictions." data-pt="Sem limites de domínio. Dimensione suas campanhas em quantos domínios precisar sem taxas adicionais ou restrições.">
+                            No domain limits whatsoever. Scale your campaigns across as many domains as you need without additional fees or restrictions.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 data-en="Sub-100ms Response Time" data-pt="Tempo de Resposta Abaixo de 100ms">Sub-100ms Response Time</h3>
+                        <p data-en="Lightning-fast decision making with average response times under 100ms globally. Your users won't even notice the cloaking layer." data-pt="Tomada de decisão ultrarrápida com tempos de resposta médios abaixo de 100ms globalmente. Seus usuários nem notarão a camada de cloaking.">
+                            Lightning-fast decision making with average response times under 100ms globally. Your users won't even notice the cloaking layer.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 data-en="Integrated Analytics" data-pt="Análises Integradas">Integrated Analytics</h3>
+                        <p data-en="Real-time traffic analytics, conversion tracking, and detailed reporting. See exactly how your campaigns are performing." data-pt="Análises de tráfego em tempo real, rastreamento de conversões e relatórios detalhados. Veja exatamente como suas campanhas estão performando.">
+                            Real-time traffic analytics, conversion tracking, and detailed reporting. See exactly how your campaigns are performing.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 data-en="Advanced Bot Protection" data-pt="Proteção Avançada contra Bots">Advanced Bot Protection</h3>
+                        <p data-en="ProxyCheck.io integration automatically filters out bots, proxies, and suspicious traffic to protect your campaigns." data-pt="Integração com ProxyCheck.io filtra automaticamente bots, proxies e tráfego suspeito para proteger suas campanhas.">
+                            ProxyCheck.io integration automatically filters out bots, proxies, and suspicious traffic to protect your campaigns.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 data-en="Facebook Ads Optimized" data-pt="Otimizado para Facebook Ads">Facebook Ads Optimized</h3>
+                        <p data-en="Specially tuned for Facebook advertising with built-in pixel tracking and conversion optimization features." data-pt="Especialmente ajustado para publicidade no Facebook com rastreamento de pixel integrado e recursos de otimização de conversão.">
+                            Specially tuned for Facebook advertising with built-in pixel tracking and conversion optimization features.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 data-en="Built-in A/B Testing" data-pt="Teste A/B Integrado">Built-in A/B Testing</h3>
+                        <p data-en="Test multiple offers and landing pages automatically. Optimize your campaigns based on real performance data." data-pt="Teste múltiplas ofertas e páginas de destino automaticamente. Otimize suas campanhas com base em dados reais de desempenho.">
+                            Test multiple offers and landing pages automatically. Optimize your campaigns based on real performance data.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 data-en="24/7 Expert Support" data-pt="Suporte Especializado 24/7">24/7 Expert Support</h3>
+                        <p data-en="Get help when you need it from our team of cloaking experts. We're here to help you succeed." data-pt="Obtenha ajuda quando precisar de nossa equipe de especialistas em cloaking. Estamos aqui para ajudá-lo a ter sucesso.">
+                            Get help when you need it from our team of cloaking experts. We're here to help you succeed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="See The Difference" data-pt="Veja a Diferença">See The Difference</h2>
+                <p class="section-subtitle" data-en="Compare CloakerPro with typical competitors and see why we offer 150x better value." data-pt="Compare o CloakerPro com concorrentes típicos e veja por que oferecemos 150x melhor custo-benefício.">
+                    Compare CloakerPro with typical competitors and see why we offer 150x better value.
+                </p>
+            </div>
+            
+            <div class="comparison-table">
+                <div class="comparison-header">
+                    <div class="comparison-feature">
+                        <h3 data-en="Features" data-pt="Recursos">Features</h3>
+                    </div>
+                    <div class="comparison-competitor">
+                        <h3 data-en="Typical Competitors" data-pt="Concorrentes Típicos">Typical Competitors</h3>
+                        <div class="price" data-en="$97+/month" data-pt="$97+/mês">$97+/month</div>
+                    </div>
+                    <div class="comparison-cloakerpro">
+                        <h3>CloakerPro</h3>
+                        <div class="price" data-en="$37/month" data-pt="$37/mês">$37/month</div>
+                        <div class="badge" data-en="Best Value" data-pt="Melhor Custo-Benefício">Best Value</div>
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-feature">
+                        <span data-en="Monthly Requests" data-pt="Requisições Mensais">Monthly Requests</span>
+                    </div>
+                    <div class="comparison-competitor">
+                        <span class="value-bad">20,000</span>
+                    </div>
+                    <div class="comparison-cloakerpro">
+                        <span class="value-good">3,000,000</span>
+                        <small data-en="150x more" data-pt="150x mais">150x more</small>
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-feature">
+                        <span data-en="Domain Limits" data-pt="Limite de Domínios">Domain Limits</span>
+                    </div>
+                    <div class="comparison-competitor">
+                        <span class="value-bad" data-en="5-10 domains" data-pt="5-10 domínios">5-10 domains</span>
+                    </div>
+                    <div class="comparison-cloakerpro">
+                        <span class="value-good" data-en="Unlimited" data-pt="Ilimitado">Unlimited</span>
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-feature">
+                        <span data-en="Infrastructure" data-pt="Infraestrutura">Infrastructure</span>
+                    </div>
+                    <div class="comparison-competitor">
+                        <span class="value-bad" data-en="External servers" data-pt="Servidores externos">External servers</span>
+                    </div>
+                    <div class="comparison-cloakerpro">
+                        <span class="value-good" data-en="100% Cloudflare" data-pt="100% Cloudflare">100% Cloudflare</span>
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-feature">
+                        <span data-en="Response Time" data-pt="Tempo de Resposta">Response Time</span>
+                    </div>
+                    <div class="comparison-competitor">
+                        <span class="value-bad">200-500ms</span>
+                    </div>
+                    <div class="comparison-cloakerpro">
+                        <span class="value-good">&lt;100ms</span>
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-feature">
+                        <span data-en="Bot Protection" data-pt="Proteção contra Bots">Bot Protection</span>
+                    </div>
+                    <div class="comparison-competitor">
+                        <i class="fas fa-times text-red"></i>
+                        <span data-en="Basic or None" data-pt="Básica ou Nenhuma">Basic or None</span>
+                    </div>
+                    <div class="comparison-cloakerpro">
+                        <i class="fas fa-check text-green"></i>
+                        <span data-en="ProxyCheck.io Integration" data-pt="Integração ProxyCheck.io">ProxyCheck.io Integration</span>
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-feature">
+                        <span data-en="Analytics Dashboard" data-pt="Painel de Análises">Analytics Dashboard</span>
+                    </div>
+                    <div class="comparison-competitor">
+                        <i class="fas fa-times text-red"></i>
+                        <span data-en="Basic reports" data-pt="Relatórios básicos">Basic reports</span>
+                    </div>
+                    <div class="comparison-cloakerpro">
+                        <i class="fas fa-check text-green"></i>
+                        <span data-en="Real-time advanced analytics" data-pt="Análises avançadas em tempo real">Real-time advanced analytics</span>
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-feature">
+                        <span data-en="A/B Testing" data-pt="Teste A/B">A/B Testing</span>
+                    </div>
+                    <div class="comparison-competitor">
+                        <i class="fas fa-times text-red"></i>
+                        <span data-en="Not included" data-pt="Não incluído">Not included</span>
+                    </div>
+                    <div class="comparison-cloakerpro">
+                        <i class="fas fa-check text-green"></i>
+                        <span data-en="Built-in" data-pt="Integrado">Built-in</span>
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-feature">
+                        <span data-en="Support" data-pt="Suporte">Support</span>
+                    </div>
+                    <div class="comparison-competitor">
+                        <span class="value-bad" data-en="Email only" data-pt="Apenas email">Email only</span>
+                    </div>
+                    <div class="comparison-cloakerpro">
+                        <span class="value-good" data-en="24/7 Expert Support" data-pt="Suporte Especializado 24/7">24/7 Expert Support</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="value-proposition">
+                <div class="value-card">
+                    <div class="value-number">150x</div>
+                    <div class="value-text" data-en="Better Value Per Request" data-pt="Melhor Custo-Benefício por Requisição">Better Value Per Request</div>
+                </div>
+                <div class="value-card">
+                    <div class="value-number">$0.00001</div>
+                    <div class="value-text" data-en="Cost Per Request" data-pt="Custo por Requisição">Cost Per Request</div>
+                </div>
+                <div class="value-card">
+                    <div class="value-number">∞</div>
+                    <div class="value-text" data-en="Domain Limit" data-pt="Limite de Domínios">Domain Limit</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Simple, Transparent Pricing" data-pt="Preços Simples e Transparentes">Simple, Transparent Pricing</h2>
+                <p class="section-subtitle" data-en="One plan, unlimited possibilities. No hidden fees, no domain limits, no surprises." data-pt="Um plano, possibilidades ilimitadas. Sem taxas ocultas, sem limites de domínio, sem surpresas.">
+                    One plan, unlimited possibilities. No hidden fees, no domain limits, no surprises.
+                </p>
+            </div>
+            
+            <div class="pricing-container">
+                <div class="pricing-card featured">
+                    <div class="pricing-badge" data-en="Most Popular" data-pt="Mais Popular">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 data-en="Professional Plan" data-pt="Plano Profissional">Professional Plan</h3>
+                        <div class="pricing-price">
+                            <span class="currency">$</span>
+                            <span class="amount">37</span>
+                            <span class="period" data-en="/month" data-pt="/mês">/month</span>
+                        </div>
+                        <div class="pricing-description" data-en="Everything you need to scale your campaigns" data-pt="Tudo que você precisa para dimensionar suas campanhas">
+                            Everything you need to scale your campaigns
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span data-en="100,000 daily requests (3M monthly)" data-pt="100.000 requisições diárias (3M mensais)">100,000 daily requests (3M monthly)</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span data-en="Unlimited domains" data-pt="Domínios ilimitados">Unlimited domains</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span data-en="Sub-100ms response time" data-pt="Tempo de resposta abaixo de 100ms">Sub-100ms response time</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span data-en="100% Cloudflare infrastructure" data-pt="100% infraestrutura Cloudflare">100% Cloudflare infrastructure</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span data-en="Real-time analytics dashboard" data-pt="Painel de análises em tempo real">Real-time analytics dashboard</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span data-en="ProxyCheck.io bot protection" data-pt="Proteção contra bots ProxyCheck.io">ProxyCheck.io bot protection</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span data-en="Facebook Ads optimization" data-pt="Otimização para Facebook Ads">Facebook Ads optimization</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span data-en="Built-in A/B testing" data-pt="Teste A/B integrado">Built-in A/B testing</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span data-en="24/7 expert support" data-pt="Suporte especializado 24/7">24/7 expert support</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span data-en="99.9% uptime SLA" data-pt="SLA de 99,9% de disponibilidade">99.9% uptime SLA</span>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-cta">
+                        <a href="#signup" class="cta-btn primary-cta full-width">
+                            <span data-en="Start Free 7-Day Trial" data-pt="Inicie Teste Grátis de 7 Dias">Start Free 7-Day Trial</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <div class="pricing-note" data-en="No credit card required • Cancel anytime" data-pt="Não requer cartão de crédito • Cancele a qualquer momento">
+                            No credit card required • Cancel anytime
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pricing-faq">
+                <h3 data-en="Frequently Asked Questions" data-pt="Perguntas Frequentes">Frequently Asked Questions</h3>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question" data-en="What happens if I exceed 100,000 daily requests?" data-pt="O que acontece se eu exceder 100.000 requisições diárias?">
+                            What happens if I exceed 100,000 daily requests?
+                        </div>
+                        <div class="faq-answer" data-en="Your service continues to work normally. We'll contact you to discuss upgrading to a higher tier if consistently over the limit." data-pt="Seu serviço continua funcionando normalmente. Entraremos em contato para discutir um upgrade para um nível superior se consistentemente acima do limite.">
+                            Your service continues to work normally. We'll contact you to discuss upgrading to a higher tier if consistently over the limit.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" data-en="Is there really no limit on domains?" data-pt="Realmente não há limite de domínios?">
+                            Is there really no limit on domains?
+                        </div>
+                        <div class="faq-answer" data-en="Correct. You can use as many domains as you need for your campaigns without any additional fees or restrictions." data-pt="Correto. Você pode usar quantos domínios precisar para suas campanhas sem taxas adicionais ou restrições.">
+                            Correct. You can use as many domains as you need for your campaigns without any additional fees or restrictions.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" data-en="How does the 7-day free trial work?" data-pt="Como funciona o teste grátis de 7 dias?">
+                            How does the 7-day free trial work?
+                        </div>
+                        <div class="faq-answer" data-en="Full access to all features for 7 days. No credit card required to start. You can cancel anytime during the trial." data-pt="Acesso completo a todos os recursos por 7 dias. Não requer cartão de crédito para começar. Você pode cancelar a qualquer momento durante o teste.">
+                            Full access to all features for 7 days. No credit card required to start. You can cancel anytime during the trial.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" data-en="What makes CloakerPro different from competitors?" data-pt="O que torna o CloakerPro diferente dos concorrentes?">
+                            What makes CloakerPro different from competitors?
+                        </div>
+                        <div class="faq-answer" data-en="We're built 100% on Cloudflare Workers, not external servers. This gives us better performance, reliability, and allows us to offer 150x more requests at a lower price." data-pt="Somos construídos 100% em Cloudflare Workers, não em servidores externos. Isso nos dá melhor desempenho, confiabilidade e nos permite oferecer 150x mais requisições a um preço menor.">
+                            We're built 100% on Cloudflare Workers, not external servers. This gives us better performance, reliability, and allows us to offer 150x more requests at a lower price.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Trusted by Top Marketers" data-pt="Confiado pelos Melhores Profissionais de Marketing">Trusted by Top Marketers</h2>
+                <p class="section-subtitle" data-en="See what our customers are saying about CloakerPro" data-pt="Veja o que nossos clientes estão dizendo sobre o CloakerPro">
+                    See what our customers are saying about CloakerPro
+                </p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-text" data-en="&quot;CloakerPro saved me $2,000+ monthly compared to my previous solution. The speed difference is incredible - my campaigns convert 40% better now.&quot;" data-pt="&quot;O CloakerPro me economizou mais de $2.000 mensais comparado à minha solução anterior. A diferença de velocidade é incrível - minhas campanhas convertem 40% melhor agora.&quot;">
+                        "CloakerPro saved me $2,000+ monthly compared to my previous solution. The speed difference is incredible - my campaigns convert 40% better now."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Marcus Silva</div>
+                            <div class="author-title" data-en="Performance Marketing Manager" data-pt="Gerente de Marketing de Performance">Performance Marketing Manager</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-text" data-en="&quot;Finally, a cloaking service that actually works reliably. The analytics dashboard gives me insights I never had before. Highly recommended!&quot;" data-pt="&quot;Finalmente, um serviço de cloaking que realmente funciona de forma confiável. O painel de análises me dá insights que nunca tive antes. Altamente recomendado!&quot;">
+                        "Finally, a cloaking service that actually works reliably. The analytics dashboard gives me insights I never had before. Highly recommended!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Sarah Johnson</div>
+                            <div class="author-title" data-en="Digital Marketing Director" data-pt="Diretora de Marketing Digital">Digital Marketing Director</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-text" data-en="&quot;The unlimited domains feature alone makes this worth it. I'm running 50+ campaigns without any issues. Best investment I've made this year.&quot;" data-pt="&quot;O recurso de domínios ilimitados por si só já vale a pena. Estou executando mais de 50 campanhas sem problemas. Melhor investimento que fiz este ano.&quot;">
+                        "The unlimited domains feature alone makes this worth it. I'm running 50+ campaigns without any issues. Best investment I've made this year."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Roberto Costa</div>
+                            <div class="author-title" data-en="Affiliate Marketing Specialist" data-pt="Especialista em Marketing de Afiliados">Affiliate Marketing Specialist</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-en="Ready to 10x Your Campaign Performance?" data-pt="Pronto para Multiplicar por 10 o Desempenho de Suas Campanhas?">Ready to 10x Your Campaign Performance?</h2>
+                <p data-en="Join thousands of marketers who've already made the switch to CloakerPro. Start your free trial today and see the difference for yourself." data-pt="Junte-se a milhares de profissionais de marketing que já fizeram a mudança para o CloakerPro. Inicie seu teste grátis hoje e veja a diferença por si mesmo.">
+                    Join thousands of marketers who've already made the switch to CloakerPro. Start your free trial today and see the difference for yourself.
+                </p>
+                
+                <div class="cta-buttons">
+                    <a href="#signup" class="cta-btn primary-cta large">
+                        <span data-en="Start Free 7-Day Trial" data-pt="Inicie Teste Grátis de 7 Dias">Start Free 7-Day Trial</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#demo" class="cta-btn secondary-cta large">
+                        <i class="fas fa-calendar"></i>
+                        <span data-en="Book a Demo" data-pt="Agende uma Demo">Book a Demo</span>
+                    </a>
+                </div>
+                
+                <div class="cta-guarantees">
+                    <div class="guarantee-item">
+                        <i class="fas fa-shield-check"></i>
+                        <span data-en="7-day free trial" data-pt="Teste grátis de 7 dias">7-day free trial</span>
+                    </div>
+                    <div class="guarantee-item">
+                        <i class="fas fa-credit-card"></i>
+                        <span data-en="No credit card required" data-pt="Não requer cartão de crédito">No credit card required</span>
+                    </div>
+                    <div class="guarantee-item">
+                        <i class="fas fa-times-circle"></i>
+                        <span data-en="Cancel anytime" data-pt="Cancele a qualquer momento">Cancel anytime</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-logo">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>CloakerPro</span>
+                    </div>
+                    <p data-en="Professional traffic cloaking built on Cloudflare infrastructure." data-pt="Cloaking profissional de tráfego construído na infraestrutura Cloudflare.">
+                        Professional traffic cloaking built on Cloudflare infrastructure.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 data-en="Product" data-pt="Produto">Product</h4>
+                        <ul>
+                            <li><a href="#features" data-en="Features" data-pt="Recursos">Features</a></li>
+                            <li><a href="#pricing" data-en="Pricing" data-pt="Preços">Pricing</a></li>
+                            <li><a href="#demo" data-en="Demo" data-pt="Demo">Demo</a></li>
+                            <li><a href="#api" data-en="API Docs" data-pt="Documentação API">API Docs</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 data-en="Support" data-pt="Suporte">Support</h4>
+                        <ul>
+                            <li><a href="#help" data-en="Help Center" data-pt="Central de Ajuda">Help Center</a></li>
+                            <li><a href="#contact" data-en="Contact Us" data-pt="Fale Conosco">Contact Us</a></li>
+                            <li><a href="#status" data-en="System Status" data-pt="Status do Sistema">System Status</a></li>
+                            <li><a href="#tutorials" data-en="Tutorials" data-pt="Tutoriais">Tutorials</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 data-en="Company" data-pt="Empresa">Company</h4>
+                        <ul>
+                            <li><a href="#about" data-en="About Us" data-pt="Sobre Nós">About Us</a></li>
+                            <li><a href="#blog" data-en="Blog" data-pt="Blog">Blog</a></li>
+                            <li><a href="#careers" data-en="Careers" data-pt="Carreiras">Careers</a></li>
+                            <li><a href="#partners" data-en="Partners" data-pt="Parceiros">Partners</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 data-en="Legal" data-pt="Legal">Legal</h4>
+                        <ul>
+                            <li><a href="#privacy" data-en="Privacy Policy" data-pt="Política de Privacidade">Privacy Policy</a></li>
+                            <li><a href="#terms" data-en="Terms of Service" data-pt="Termos de Serviço">Terms of Service</a></li>
+                            <li><a href="#security" data-en="Security" data-pt="Segurança">Security</a></li>
+                            <li><a href="#compliance" data-en="Compliance" data-pt="Conformidade">Compliance</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <span data-en="© 2025 CloakerPro. All rights reserved." data-pt="© 2025 CloakerPro. Todos os direitos reservados.">© 2025 CloakerPro. All rights reserved.</span>
+                </div>
+                <div class="footer-social">
+                    <a href="#twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#telegram" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
