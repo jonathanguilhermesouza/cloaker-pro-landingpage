@@ -144,6 +144,11 @@ button {
     gap: var(--spacing-sm);
 }
 
+.brand-logo-svg {
+    display: flex;
+    align-items: center;
+}
+
 .brand-icon {
     font-size: var(--font-size-xl);
     color: var(--primary-color);
