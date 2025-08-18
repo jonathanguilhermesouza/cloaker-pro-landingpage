@@ -1,9 +1,9 @@
 /* CSS Custom Properties for Theme */
 :root {
     /* Colors */
-    --primary-color: #3b82f6;
-    --primary-dark: #2563eb;
-    --primary-light: #60a5fa;
+    --primary-color: #4285f4;
+    --primary-dark: #1a73e8;
+    --primary-light: #6ba6f5;
     --secondary-color: #10b981;
     --accent-color: #f59e0b;
     --danger-color: #ef4444;
@@ -24,10 +24,10 @@
     /* Border Colors */
     --border-primary: #334155;
     --border-secondary: #475569;
-    --border-accent: #3b82f6;
+    --border-accent: #4285f4;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    --gradient-primary: linear-gradient(135deg, #4285f4 0%, #1a73e8 100%);
     --gradient-secondary: linear-gradient(135deg, #10b981 0%, #059669 100%);
     --gradient-hero: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
     --gradient-card: linear-gradient(135deg, #1e293b 0%, #334155 100%);

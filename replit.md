@@ -1,4 +1,4 @@
-# CloakerPro Landing Page
+# CloakerAds Landing Page
 
 ## Status Atual (2025-07-23 20:23)
 ✅ Servidor funcionando corretamente no desenvolvimento
@@ -8,7 +8,7 @@
 
 ## Overview
 
-CloakerPro is a professional marketing landing page for a traffic cloaking service built on Cloudflare infrastructure. This is a static website designed to convert digital marketing professionals into customers through compelling copy, competitive positioning, and a modern tech-focused design.
+CloakerAds is a professional marketing landing page for a traffic cloaking service built on Cloudflare infrastructure. This is a static website designed to convert digital marketing professionals into customers through compelling copy, competitive positioning, and a modern tech-focused design.
 
 ## User Preferences
 
