@@ -41,7 +41,7 @@ export function Depoimentos() {
             key={i}
             className="rounded-[16px] border border-[var(--color-border-light)] bg-[var(--color-bg)] p-8 transition-all hover:border-[var(--color-border)] hover:shadow-[var(--shadow-sm)]"
           >
-            <div className="flex h-10 w-10 items-center justify-center rounded-[10px] bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] text-white">
+            <div className="flex h-10 w-10 items-center justify-center rounded-[10px] bg-gradient-to-br from-[var(--color-secondary)] to-[var(--color-primary)] text-white">
               <Quote className="h-4 w-4" />
             </div>
             <p className="mt-5 text-[15px] leading-[1.75] text-[var(--color-text)]">

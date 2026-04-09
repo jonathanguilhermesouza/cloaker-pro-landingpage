@@ -78,7 +78,7 @@ export function FAQ() {
                   <div
                     className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full transition-colors ${
                       isOpen
-                        ? "bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] text-white"
+                        ? "bg-gradient-to-br from-[var(--color-secondary)] to-[var(--color-primary)] text-white"
                         : "bg-white border border-[var(--color-border)] text-[var(--color-text-muted)]"
                     }`}
                   >

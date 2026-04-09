@@ -5,7 +5,7 @@ export function Contato() {
     <section id="contato" className="relative overflow-hidden py-24 md:py-28 bg-white">
       <div className="absolute inset-0 hero-bg pointer-events-none" aria-hidden />
       <div className="container-page relative">
-        <div className="mx-auto max-w-[860px] overflow-hidden rounded-[24px] bg-gradient-to-br from-[var(--color-primary)] via-[var(--color-primary-dark)] to-[var(--color-secondary)] p-10 md:p-14 text-center text-white shadow-[var(--shadow-xl)]">
+        <div className="mx-auto max-w-[860px] overflow-hidden rounded-[24px] bg-gradient-to-br from-[var(--color-secondary)] via-[var(--color-primary)] to-[var(--color-primary-dark)] p-10 md:p-14 text-center text-white shadow-[var(--shadow-xl)]">
           <div className="inline-block mb-5 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.1em] backdrop-blur">
             Pronto para começar?
           </div>

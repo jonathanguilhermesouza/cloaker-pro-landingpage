@@ -41,7 +41,7 @@ export function Hero() {
             className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up"
             style={{ animationDelay: "200ms" }}
           >
-            <LinkButton href="https://app.cloakerads.com" external variant="primary" size="lg">
+            <LinkButton href="https://app.cloakerads.com" external variant="accent" size="lg">
               Começar agora
               <ArrowRight className="h-4 w-4" />
             </LinkButton>

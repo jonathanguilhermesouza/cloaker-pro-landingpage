@@ -34,8 +34,8 @@ export function Precos() {
       <div className="mx-auto max-w-[560px]">
         <div className="relative overflow-hidden rounded-[20px] border-2 border-[var(--color-primary)] bg-white shadow-[var(--shadow-xl)]">
           {/* Top ribbon */}
-          <div className="bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-secondary)] py-3 text-center text-[12px] font-bold uppercase tracking-[0.15em] text-white">
-            ⭐ Plano Único · Mais Completo do Mercado
+          <div className="bg-gradient-to-r from-[var(--color-secondary)] to-[var(--color-primary)] py-3 text-center text-[12px] font-bold uppercase tracking-[0.15em] text-white">
+            Plano Único · Mais Completo do Mercado
           </div>
 
           <div className="p-8 md:p-10">
@@ -63,7 +63,7 @@ export function Precos() {
               <LinkButton
                 href="https://app.cloakerads.com"
                 external
-                variant="primary"
+                variant="accent"
                 size="lg"
                 className="mt-8 w-full"
               >
@@ -79,7 +79,7 @@ export function Precos() {
             <ul className="mt-10 grid gap-3.5 border-t border-[var(--color-border-light)] pt-8">
               {features.map((feat) => (
                 <li key={feat} className="flex items-start gap-3 text-[14.5px]">
-                  <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] text-white">
+                  <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[var(--color-secondary)] to-[var(--color-primary)] text-white">
                     <Check className="h-3 w-3" strokeWidth={3.5} />
                   </div>
                   <span className="text-[var(--color-text)]">{feat}</span>

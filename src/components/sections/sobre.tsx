@@ -62,7 +62,7 @@ export function Sobre() {
             key={pillar.title}
             className="rounded-[16px] border border-[var(--color-border-light)] bg-[var(--color-bg)] p-8 transition-all hover:border-[var(--color-border)] hover:shadow-[var(--shadow-sm)] hover:-translate-y-0.5"
           >
-            <div className="flex h-12 w-12 items-center justify-center rounded-[12px] bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] text-white">
+            <div className="flex h-12 w-12 items-center justify-center rounded-[12px] bg-gradient-to-br from-[var(--color-secondary)] to-[var(--color-primary)] text-white">
               <pillar.icon className="h-5 w-5" />
             </div>
             <h3 className="mt-5 text-[20px] font-bold tracking-tight text-[var(--color-text)]">

@@ -56,7 +56,7 @@ export function Header() {
           <LinkButton href="https://app.cloakerads.com" external variant="secondary" size="sm">
             Entrar
           </LinkButton>
-          <LinkButton href="https://app.cloakerads.com" external variant="primary" size="sm">
+          <LinkButton href="https://app.cloakerads.com" external variant="accent" size="sm">
             Começar agora
           </LinkButton>
         </div>
@@ -88,7 +88,7 @@ export function Header() {
               <LinkButton href="https://app.cloakerads.com" external variant="secondary" size="md">
                 Entrar
               </LinkButton>
-              <LinkButton href="https://app.cloakerads.com" external variant="primary" size="md">
+              <LinkButton href="https://app.cloakerads.com" external variant="accent" size="md">
                 Começar agora
               </LinkButton>
             </div>
