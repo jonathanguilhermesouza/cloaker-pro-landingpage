@@ -38,7 +38,7 @@ export function ComoFunciona() {
             key={step.number}
             className="relative rounded-[16px] border border-[var(--color-border-light)] bg-[var(--color-bg)] p-8 text-center transition-all hover:border-[var(--color-primary)] hover:shadow-[var(--shadow-md)] hover:-translate-y-1"
           >
-            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-[var(--color-secondary)] to-[var(--color-primary)] text-[17px] font-bold text-white shadow-[var(--shadow-md)]">
+            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-[#5BC4D4] to-[#9B4DCA] text-[17px] font-bold text-white shadow-[var(--shadow-md)]">
               {step.number}
             </div>
             <h3 className="mt-6 text-[20px] font-bold tracking-tight text-[var(--color-text)]">

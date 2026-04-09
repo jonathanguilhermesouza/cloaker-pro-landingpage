@@ -59,7 +59,7 @@ export function Solucoes() {
       {/* Main highlight card */}
       <div className="mb-12 rounded-[20px] border border-[var(--color-border-light)] bg-white p-8 md:p-12 shadow-[var(--shadow-sm)]">
         <div className="grid gap-8 md:grid-cols-[auto_1fr] md:items-center">
-          <div className="flex h-[84px] w-[84px] items-center justify-center rounded-[20px] bg-gradient-to-br from-[var(--color-secondary)] to-[var(--color-primary)] text-white shadow-[var(--shadow-md)]">
+          <div className="flex h-[84px] w-[84px] items-center justify-center rounded-[20px] bg-gradient-to-br from-[#5BC4D4] to-[#9B4DCA] text-white shadow-[var(--shadow-md)]">
             <ShieldCheck className="h-10 w-10" />
           </div>
           <div>
@@ -85,7 +85,7 @@ export function Solucoes() {
             key={f.title}
             className="rounded-[16px] border border-[var(--color-border-light)] bg-white p-7 transition-all hover:border-[var(--color-border)] hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5"
           >
-            <div className="flex h-11 w-11 items-center justify-center rounded-[12px] bg-gradient-to-br from-[var(--color-secondary)] to-[var(--color-primary)] text-white">
+            <div className="flex h-11 w-11 items-center justify-center rounded-[12px] bg-gradient-to-br from-[#5BC4D4] to-[#9B4DCA] text-white">
               <f.icon className="h-[18px] w-[18px]" />
             </div>
             <h3 className="mt-5 text-[18px] font-bold tracking-tight text-[var(--color-text)]">

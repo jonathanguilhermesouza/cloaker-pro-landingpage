@@ -12,9 +12,9 @@
   /* Brand — purple palette from CloakerAds logo */
   --color-primary: #2D1B69;
   --color-primary-dark: #160B22;
-  --color-primary-light: #7C3AED;
-  --color-secondary: #A78BFA;
-  --color-secondary-dark: #8B5CF6;
+  --color-primary-light: #9B4DCA;
+  --color-secondary: #5BC4D4;
+  --color-secondary-dark: #4AA8B8;
   --color-accent: #2D1B69;
   --color-accent-dark: #160B22;
   --color-success: #10B981;
@@ -72,7 +72,7 @@ body {
 
 /* Typography helpers */
 .gradient-text {
-  background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+  background: linear-gradient(135deg, #5BC4D4, #9B4DCA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -80,7 +80,7 @@ body {
 }
 
 .gradient-bg {
-  background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+  background: linear-gradient(135deg, #5BC4D4, #9B4DCA);
 }
 
 .hero-bg {

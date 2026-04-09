@@ -43,7 +43,7 @@ export function Diferenciais() {
             key={item.title}
             className="flex gap-5 rounded-[16px] border border-[var(--color-border-light)] bg-white p-7 transition-all hover:border-[var(--color-border)] hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5"
           >
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[12px] bg-gradient-to-br from-[var(--color-secondary)] to-[var(--color-primary)] text-white">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[12px] bg-gradient-to-br from-[#5BC4D4] to-[#9B4DCA] text-white">
               <item.icon className="h-5 w-5" />
             </div>
             <div>
